@@ -1,0 +1,107 @@
+/* order_id.css */
+/* Custom CSS for better sidebar and form layout */
+body.skin-blue .header,
+body.skin-blue .navbar,
+.navbar-static-top {
+    background-color: #002147;
+}
+
+.navbar-btn.sidebar-toggle {
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    overflow-y: auto;
+}
+.left-side {
+    width: 220px;
+}
+.right-side {
+    margin-left: 220px;
+}
+.form-3d-container {
+    margin-bottom: 20px;
+}
+.form-3d {
+    padding: 20px;
+    background: #fff;
+    border_id-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.input-3d {
+    margin-bottom: 15px;
+}
+.input-3d label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-3d input, .input-3d select {
+    width: 100%;
+    padding: 8px;
+    border_id: 1px solid #ddd;
+    border_id-radius: 4px;
+    transition: all 0.3s;
+}
+.btn-3d {
+    background: #002147;
+    color: white;
+    border_id: none;
+    padding: 10px 20px;
+    border_id-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-3d:hover {
+    background: #003366;
+    transform: translateY(-2px);
+}
+.table-3d {
+    background: #fff;
+    border_id-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.status-badge {
+    padding: 3px 8px;
+    border_id-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.status-pending {
+    background: #f39c12;
+    color: white;
+}
+.status-accepted {
+    background: #00a65a;
+    color: white;
+}
+.status-rejected {
+    background: #dd4b39;
+    color: white;
+}
+.btn-action {
+    border_id: none;
+    background: none;
+    padding: 5px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.btn-view {
+    color: #002147;
+}
+.btn-edit {
+    color: #f39c12;
+}
+.btn-delete {
+    color: #dd4b39;
+}
+.barcode-img {
+    height: 40px;
+}
+.loading {
+    color: #999;
+    font-style: italic;
+}

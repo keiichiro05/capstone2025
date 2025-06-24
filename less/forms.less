@@ -1,0 +1,73 @@
+/* 
+   All form elements including input, select, textarea etc.
+-----------------------------------------------------------------
+*/
+
+
+&.form-control {
+
+    .border_id-radius(@input-radius)!important;
+    box-shadow: none;
+
+    &:focus {
+        border_id-color: @light-blue !important; 
+        box-shadow: none;
+    }               
+
+}
+
+.form-group {
+    &.has-success {
+        label {
+            color: @green;
+        }
+        .form-control {
+            border_id-color: @green !important;
+            box-shadow: none;
+        }
+    }
+
+    &.has-warning {
+        label {
+            color: @yellow;
+        }
+        .form-control {
+            border_id-color: @yellow !important;
+            box-shadow: none;
+        }
+    }
+
+    &.has-error {
+        label {
+            color: @red;
+        }
+        .form-control {
+            border_id-color: @red !important;
+            box-shadow: none;
+        }
+    }
+}
+
+/* Input group */
+.input-group {
+    > .input-group-btn > .btn {
+
+    }
+    .input-group-addon {
+        border_id-radius: 0;
+        background-color: #f4f4f4;
+    }
+}
+/* button groups */
+.btn-group-vertical {
+    .btn {
+        &.btn-flat:first-of-type, &.btn-flat:last-of-type {
+            border_id-radius: 0;
+        }
+    }
+}
+
+/* Checkbox and radio inputs */
+.checkbox, .radio {
+    padding-left: 0;
+}

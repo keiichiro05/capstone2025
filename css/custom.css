@@ -1,0 +1,554 @@
+/* Add this to a new CSS file or in a <style> tag in the head section */
+
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.skin-blue .wrapper {
+    background-color: #f5f5f5;
+}
+
+.content-header h1 {
+    font-weight: 300;
+    color: #333;
+}
+
+.content-header h1 small {
+    color: #666;
+    font-weight: 300;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border_id-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border_id-radius: 3px;
+    border_id: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border_id-color: #3c8dbc;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 8px rgba(60,141,188,0.3);
+}
+
+.btn-primary {
+    background-color: #3c8dbc;
+    border_id-color: #367fa9;
+    border_id-radius: 3px;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #367fa9;
+    border_id-color: #2c6a91;
+}
+
+/* Table Styling */
+.table {
+    background-color: #fff;
+    border_id-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.table th {
+    background-color: #3c8dbc;
+    color: white;
+    font-weight: 500;
+    border_id-bottom: 2px solid #367fa9;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styling */
+.btn {
+    border_id-radius: 3px;
+    padding: 6px 12px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-danger {
+    background-color: #dd4b39;
+    border_id-color: #d73925;
+}
+
+.btn-danger:hover {
+    background-color: #d73925;
+    border_id-color: #c23321;
+}
+
+.btn-success {
+    background-color: #00a65a;
+    border_id-color: #008d4c;
+}
+
+.btn-success:hover {
+    background-color: #008d4c;
+    border_id-color: #00733f;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    border_id-color: #e08e0b;
+}
+
+.btn-warning:hover {
+    background-color: #e08e0b;
+    border_id-color: #c87f0a;
+}
+
+/* Alert Styling */
+.alert {
+    border_id-radius: 3px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border_id: 1px solid transparent;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border_id-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border_id-color: #ebccd1;
+    color: #a94442;
+}
+
+/* Sidebar Styling */
+.sidebar-menu {
+    padding-left: 0;
+}
+
+.sidebar-menu li {
+    border_id-bottom: 1px solid #eee;
+}
+
+.sidebar-menu li a {
+    padding: 12px 15px;
+    color: #555;
+    transition: all 0.3s;
+}
+
+.sidebar-menu li a:hover {
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+.sidebar-menu li.active a {
+    color: #fff;
+    background-color: #3c8dbc;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
+
+/* User Panel Styling */
+.user-panel {
+    padding: 15px;
+    border_id-bottom: 1px solid #eee;
+}
+
+.user-panel .info {
+    padding-left: 10px;
+}
+
+/* Header Styling */
+.header .logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #367fa9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-header h1 {
+        font-size: 24px;
+    }
+    
+    .col-md-2 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Hover Effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border_id-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.btn:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Form Input Focus Effects */
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    color: #3c8dbc;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Card-like Sections */
+.section-card {
+    background: white;
+    border_id-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 5px 10px;
+    border_id-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background-color: #f39c12;
+    color: white;
+}
+
+.status-accepted {
+    background-color: #00a65a;
+    color: white;
+}
+
+.status-rejected {
+    background-color: #dd4b39;
+    color: white;
+}
+
+/* Barcode Styling */
+.barcode-img {
+    height: 50px;
+    transition: all 0.3s;
+}
+
+.barcode-img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+/* 3D Form Styling */
+.form-3d {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border_id-radius: 12px;
+    box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.05),
+        inset 0 -2px 2px rgba(255, 255, 255, 0.5),
+        inset 0 2px 2px rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    margin-bottom: 30px;
+    border_id: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.form-3d:hover {
+    box-shadow: 
+        0 12px 24px rgba(0, 0, 0, 0.15),
+        0 4px 8px rgba(0, 0, 0, 0.08),
+        inset 0 -2px 2px rgba(255, 255, 255, 0.5),
+        inset 0 2px 2px rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+.form-3d::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, rgba(60, 141, 188, 0.1), rgba(60, 141, 188, 0.05));
+    z-index: -1;
+    border_id-radius: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form-3d:hover::before {
+    opacity: 1;
+}
+
+.form-3d h1 {
+    color: #3c8dbc;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.form-3d h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #3c8dbc, rgba(60, 141, 188, 0.3));
+    border_id-radius: 3px;
+}
+
+/* 3D Input Fields */
+.input-3d {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-3d label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.input-3d input, 
+.input-3d select {
+    width: 100%;
+    padding: 12px 15px;
+    border_id: none;
+    border_id-radius: 8px;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+    box-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.1),
+        -3px -3px 6px rgba(255, 255, 255, 0.8),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.2),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    color: #333;
+    border_id: 1px solid rgba(0,0,0,0.05);
+}
+
+.input-3d input:focus, 
+.input-3d select:focus {
+    outline: none;
+    box-shadow: 
+        4px 4px 8px rgba(0, 0, 0, 0.1),
+        -4px -4px 8px rgba(255, 255, 255, 0.8),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.2),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.05),
+        0 0 0 3px rgba(60, 141, 188, 0.3);
+    transform: translateY(-2px);
+}
+
+.input-3d input::placeholder {
+    color: #aaa;
+}
+
+/* 3D Submit Button */
+.btn-3d {
+    position: relative;
+    padding: 12px 25px;
+    background: linear-gradient(145deg, #3c8dbc, #367fa9);
+    color: white;
+    border_id: none;
+    border_id-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 
+        4px 4px 8px rgba(0, 0, 0, 0.2),
+        -2px -2px 4px rgba(255, 255, 255, 0.1),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.2),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.btn-3d:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        6px 6px 12px rgba(0, 0, 0, 0.25),
+        -3px -3px 6px rgba(255, 255, 255, 0.1),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.2),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #367fa9, #3c8dbc);
+}
+
+.btn-3d:active {
+    transform: translateY(1px);
+    box-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.2),
+        -1px -1px 2px rgba(255, 255, 255, 0.1),
+        inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-3d::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0)
+    );
+    transform: rotate(30deg);
+    transition: all 0.3s ease;
+}
+
+.btn-3d:hover::after {
+    left: 100%;
+}
+
+/* Floating Label Effect */
+.float-label {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.float-label input, 
+.float-label select {
+    padding: 15px;
+    border_id: none;
+    border_id-radius: 8px;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+    box-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.1),
+        -3px -3px 6px rgba(255, 255, 255, 0.8);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.float-label label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #777;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+    padding: 0 5px;
+    border_id-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.float-label input:focus + label,
+.float-label input:not(:placeholder-shown) + label,
+.float-label select:focus + label,
+.float-label select:not([value=""]) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #3c8dbc;
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    padding: 0 8px;
+}
+
+/* Glowing Focus Effect */
+.glow-on-focus:focus {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 
+            0 0 5px rgba(60, 141, 188, 0.5),
+            0 0 10px rgba(60, 141, 188, 0.3);
+    }
+    to {
+        box-shadow: 
+            0 0 10px rgba(60, 141, 188, 0.8),
+            0 0 20px rgba(60, 141, 188, 0.5);
+    }
+}
+
+/* Form Section Animation */
+@keyframes formEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+.form-3d {
+    animation: formEntrance 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}

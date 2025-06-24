@@ -1,0 +1,243 @@
+/* Custom Dashboard Header */
+.custom-dashboard-header {
+    background: linear-gradient(135deg, #1e5799 0%,#207cca 51%,#2989d8 100%);
+    color: white;
+    padding: 25px 20px; /* Increased padding for better visual space */
+    margin-bottom: 20px;
+    border_id-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* More pronounced shadow */
+    animation: fadeInDown 0.8s ease-out; /* Add entry animation */
+}
+
+.custom-dashboard-header h1 {
+    margin: 0;
+    font-size: 32px; /* Larger main title */
+    font-weight: 600;
+}
+
+.custom-dashboard-header h1 small {
+    color: rgba(255, 255, 255, 0.8); /* Lighter color for subtitle */
+    font-size: 65%; /* Slightly smaller subtitle */
+    display: block; /* Ensure subtitle is on its own line */
+    margin-top: 5px;
+}
+
+.header-date-time {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Small Boxes (Info Boxes) */
+.small-box {
+    border_id-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden; /* Hide overflowing content during hover */
+}
+
+.small-box:hover {
+    transform: translateY(-8px); /* Lift the box more on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Stronger shadow on hover */
+}
+
+.small-box .icon {
+    top: 15px; /* Adjust icon position */
+    font-size: 70px; /* Slightly smaller icon base size */
+    transition: font-size 0.3s ease-in-out;
+}
+
+.small-box:hover .icon {
+    font-size: 90px; /* Enlarge icon more on hover */
+}
+
+.small-box h3 {
+    font-size: 38px; /* Larger numbers */
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
+.small-box p {
+    font-size: 16px; /* Larger text for descriptions */
+}
+
+/* General Box Styling */
+.box {
+    border_id-radius: 10px; /* Consistent rounded corners for all boxes */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px; /* Add more space between boxes */
+}
+
+.box-header {
+    border_id-top-left-radius: 10px;
+    border_id-top-right-radius: 10px;
+    background-color: #f7f7f7; /* Light background for headers */
+    border_id-bottom: 1px solid #eee;
+    padding: 15px; /* More padding */
+}
+
+.box-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box-body {
+    padding: 20px; /* More padding inside box bodies */
+}
+
+/* Chart Containers */
+.chart-container {
+    position: relative;
+    height: 350px; /* Slightly taller charts */
+    width: 100%; /* Ensure charts take full width */
+}
+
+/* Stock Alerts List */
+.stock-alert-list {
+    padding: 0;
+    list-style: none;
+}
+
+.alert-item {
+    border_id-left: 5px solid; /* Thicker border_id for alerts */
+    margin-bottom: 10px;
+    padding: 12px 15px; /* More padding for alerts */
+    border_id-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background-color: #fcfcfc; /* Slightly off-white background */
+}
+
+.alert-item:hover {
+    transform: translateX(8px); /* Move more on hover */
+    background-color: #f0f0f0; /* Darker hover background */
+}
+
+.stock-critical {
+    border_id-left-color: #dc3545; /* Red */
+    background-color: #fef1f2; /* Very light red background */
+}
+
+.stock-warning {
+    border_id-left-color: #ffc107; /* Yellow */
+    background-color: #fffaf0; /* Very light yellow background */
+}
+
+.list-group-item-success {
+    border_id-left-color: #28a745; /* Green */
+    background-color: #e6ffed; /* Very light green background */
+}
+
+/* Progress Bars in Alerts */
+.progress-sm {
+    height: 8px; /* Thinner progress bar */
+    margin-top: 5px;
+    background-color: #e9ecef; /* Lighter background for empty part */
+}
+
+.progress-bar-danger {
+    background-color: #dc3545; /* Red for danger */
+}
+
+/* Info Box in Stock Alerts */
+.custom-info-box {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    padding: 15px;
+    border_id-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.custom-info-box .info-box-icon {
+    font-size: 40px; /* Larger icon in info box */
+    height: auto; /* Remove fixed height */
+    width: auto; /* Remove fixed width */
+    line-height: 1; /* Adjust line height */
+    padding-right: 15px; /* Space between icon and content */
+    border_id-right: 1px solid rgba(255,255,255,0.3); /* Separator */
+    margin-right: 15px;
+}
+
+.custom-info-box .info-box-content {
+    flex-grow: 1; /* Allow content to take available space */
+}
+
+.custom-info-box .info-box-number {
+    font-size: 28px; /* Larger number */
+    font-weight: bold;
+}
+
+.custom-info-box .progress {
+    background-color: rgba(255,255,255,0.3); /* Lighter progress bar background */
+}
+
+/* Recent order_ids List */
+.products-list .item {
+    padding: 10px 0;
+    border_id-bottom: 1px solid #eee;
+}
+
+.products-list .item:last-child {
+    border_id-bottom: none; /* No border_id for the last item */
+}
+
+.products-list .product-info .product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.products-list .product-info .product-description {
+    color: #777;
+    font-size: 13px;
+}
+
+/* General Layout Adjustments */
+body {
+    font-family: 'Source Sans Pro', sans-serif; /* Use a modern font */
+}
+
+.content-header {
+    padding-bottom: 0; /* Adjust content header padding */
+}
+
+.content {
+    padding: 15px; /* General content padding */
+}
+
+/* Animations */
+.animate__animated.animate__fadeIn {
+    animation-duration: 0.8s;
+}
+
+.animate__animated.animate__delay-0-5s {
+    animation-delay: 0.5s;
+}
+
+.animate__animated.animate__delay-1s {
+    animation-delay: 1s;
+}
+
+.animate__animated.animate__delay-1-5s {
+    animation-delay: 1.5s;
+}
+
+/* AdminLTE Overrides (Optional, for specific adjustments if needed) */
+.skin-blue .main-header .navbar {
+    background-color: #367fa9; /* Ensure navbar color matches theme */
+}
+
+.skin-blue .left-side {
+    background-color: #222d32; /* Sidebar background */
+}
+
+.skin-blue .sidebar a {
+    color: #b8c7ce; /* Sidebar link color */
+}
+
+.skin-blue .sidebar-menu > li.active > a {
+    border_id-left-color: #3c8dbc; /* Active sidebar item border_id */
+    background-color: #1e282c; /* Active sidebar item background */
+}
